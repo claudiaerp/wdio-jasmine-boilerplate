@@ -1,8 +1,12 @@
 export const config: WebdriverIO.Config = {
+    path: '/wd/hub', 
     services: [
         [
             'selenium-standalone',
             {
+                args: {
+					seleniumArgs: ['-port', '4444']
+				},
                 logs: 'logs',
             },
         ],

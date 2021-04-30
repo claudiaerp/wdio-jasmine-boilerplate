@@ -1,7 +1,7 @@
 import { config } from './wdio.conf'
 import { setSeleniumArgs } from './utils'
 
-setSeleniumArgs(config, { firefox: { version: '0.27.0' } })
+setSeleniumArgs(config, { firefox: { version: '0.29.1' } })
 
 const browserOptions: WebDriver.FirefoxOptions & { args: Array<string> } = {
     prefs: {
